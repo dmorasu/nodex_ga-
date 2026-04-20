@@ -115,18 +115,7 @@ export default function DashboardPageClient() {
         
         
       </div>
-      {/* Torre Control */}
-      <div className="relative group">
-          <Link
-          href="/center/torreControl"
-          className="bg-emerald-400 hover:bg-sky-400 transition text-white p-2 rounded-md flex items-center justify-center"
-        >
-          <Radar size={16} />
-        </Link>
-        <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-          Torre Control
-        </span>
-      </div>
+      
 
     </div>
   </div>

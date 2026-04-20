@@ -1,4 +1,4 @@
-import CenterPageClient from "@/components/solicitudTramites/CenterPageClient"
+import DashboardSolicitudesPage from "@/components/solicitudTramites/DashboardSolicitudes"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -23,11 +23,7 @@ export default async function CenterPage({ searchParams }: { searchParams: any }
   const response = await getSolicitudes(searchParams)
 
   return (
-    <CenterPageClient
-      solicitudes={response.data}
-      totalPages={response.totalPages}
-      currentPage={response.currentPage}
-      searchInitial={searchParams.search || ""}
+    <DashboardSolicitudesPage
     />
   )
 }
